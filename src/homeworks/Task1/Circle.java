@@ -1,23 +1,21 @@
 package homeworks.Task1;
 
-public class  Circle extends GeometricFigure {
-    protected static double r;
+public class  Circle extends BasicFigure {
 
-    /**
-     * конструктор для присваивания названия фигуры
-     *
-     * @param name
-     */
     public Circle(String name)
     {
         super(name);
     }
 
-    public Double calculateArea( double r) {
-        return Math.PI * r * r;
+    @Override
+    public Double calculatePerimeter(double a)
+    {
+        return 2 * Math.PI * a;
     }
 
-    public Double calculatePerimeter(double r) {
-        return 2 * Math.PI * r;
+    @Override
+    public Double calculateArea(double a)
+    {
+        return Math.PI * a * a;
     }
 }
