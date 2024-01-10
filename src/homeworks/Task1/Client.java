@@ -4,6 +4,7 @@ public class Client {
     public static void main(String[] args)
     {
         Circle circle = new Circle("Круг");
+
         double squareCircle = circle.calculatePerimeter(5);
         double perimeterCircle = circle.calculateArea(3);
         System.out.println(squareCircle);

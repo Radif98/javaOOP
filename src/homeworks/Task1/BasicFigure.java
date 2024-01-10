@@ -2,28 +2,6 @@ package homeworks.Task1;
 
 public class BasicFigure {
     protected String name;
-    private Double a;
-    private Double b;
-
-    public void setA(Double a)
-    {
-        this.a = a;
-    }
-
-    public void setB(Double b)
-    {
-        this.b = b;
-    }
-
-    public Double getA()
-    {
-        return a;
-    }
-
-    public Double getB()
-    {
-        return b;
-    }
 
     public BasicFigure(String name) {
 
