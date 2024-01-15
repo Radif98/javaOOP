@@ -1,4 +1,4 @@
-package homeworks.Task2;
+package homeworks.task2;
 
 public abstract class Vehicle {
     public int id;

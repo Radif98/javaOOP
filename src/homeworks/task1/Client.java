@@ -1,4 +1,4 @@
-package homeworks.Task1;
+package homeworks.task1;
 
 public class Client {
     public static void main(String[] args)

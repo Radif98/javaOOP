@@ -1,32 +1,19 @@
-package homeworks.Task2;
+package homeworks.task2;
 
-public class Boat extends Vehicle implements Swimmable{
 
-    private int maxSpeed = 42;
-    private boolean  isSailing = false;
 
-    public int getMaxSpeed()
+public class Aircraft extends Vehicle implements Flyable{
+    private int maxAltitude = 13140;
+    private boolean isFlying = false;
+
+    public boolean isFlying()
     {
-        return maxSpeed;
+        return isFlying;
     }
 
-    public boolean isSailing()
+    public int getMaxAltitude()
     {
-        return isSailing;
-    }
-
-    @Override
-    public void startSwimming()
-    {
-        System.out.println("Начало движения по воде");
-        isSailing = true;
-    }
-
-    @Override
-    public void stopSwimming()
-    {
-        System.out.println("Прекращения дижения по воде");
-        isSailing = false;
+        return maxAltitude;
     }
 
     @Override
@@ -60,7 +47,23 @@ public class Boat extends Vehicle implements Swimmable{
         System.out.println(super.brand);
         System.out.println(super.model);
         System.out.println(super.year);
-        System.out.println(getMaxSpeed());
-        System.out.println(isSailing());
+        System.out.println(getMaxAltitude());
+        System.out.println(isFlying);
     }
+
+    @Override
+    public void takeOff()
+    {
+        System.out.println("Взлет");
+        isFlying = true;
+    }
+
+    @Override
+    public void land()
+    {
+        System.out.println("Посадка");
+        isFlying = false;
+    }
+
+
 }
