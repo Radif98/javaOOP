@@ -7,10 +7,15 @@ import java.util.List;
 public class Book implements Comparable<Book> {
     private String title;
     private String author;
+    private int publishedYear;
 
     public void setTitle(String title)
     {
         this.title = title;
+    }
+    public String getTitle()
+    {
+        return this.title;
     }
 
     public String getAuthor()
@@ -33,16 +38,11 @@ public class Book implements Comparable<Book> {
         this.publishedYear = publishedYear;
     }
 
-    private int publishedYear;
 
     public Book(String title, String author, int publishedYear) {
         this.title = title;
         this.author = author;
         this.publishedYear = publishedYear;
-    }
-
-    public String getTitle() {
-        return title;
     }
 
     // Другие геттеры и методы...

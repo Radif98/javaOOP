@@ -1,11 +1,12 @@
 package seminars.seminar03.task2;
-
+@FunctionalInterface
 interface ConditionChecker {
     boolean check(int number);
 }
 
 class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         ConditionChecker isEven = n -> n % 2 == 0;
         ConditionChecker isPositive = n -> n > 0;
 
