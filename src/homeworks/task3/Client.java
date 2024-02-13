@@ -15,10 +15,10 @@ public class Client {
         potok.add(goup3);
 
         Comparator numberComparator = new StreamComparator();
-        Collections.sort(potok, numberComparator);
+//        Collections.sort(potok, numberComparator);
 
-        for (StudentGroup group: potok) {
-            System.out.println(group.toString());
-        }
+//        for (StudentGroup group: potok) {
+//            System.out.println(group.toString());
+//        }
     }
 }
